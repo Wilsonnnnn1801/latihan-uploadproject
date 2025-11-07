@@ -1,0 +1,207 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+a, h3 {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-flex;              /* use flex to center text */
+    align-items: center;               /* vertical center */
+    justify-content: center;           /* horizontal center */
+    padding: 10px 18px;
+    height: 40px;                      /* fixed height helps vertical centering */
+    min-width: 160px;                  /* optional fixed width */
+    text-decoration: none;
+    color: #fff;
+    background: #007bff;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.actions {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+    justify-content: center; /* center buttons horizontally */
+    align-items: center;
+}
+
+/* optional: different style for logout */
+.btn-logout {
+    background: #dc3545;
+}
+
+table a { text-decoration: none; color: inherit; }
+
+:root{
+    --bg1: #f6f9ff;
+    --bg2: #e8f0ff;
+    --accent: #007bff;
+    --danger: #e85959;
+    --card: #ffffff;
+    --muted: #666;
+}
+
+body {
+    background: linear-gradient(180deg,var(--bg1),var(--bg2));
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #222;
+    -webkit-font-smoothing:antialiased;
+}
+
+.container {
+    width: 96%;
+    max-width: 1100px;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: stretch;
+}
+
+.topbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background: linear-gradient(90deg,#ffffffcc, #f2f7ffcc);
+    padding:16px 20px;
+    border-radius:10px;
+    box-shadow: 0 6px 18px rgba(20,30,60,0.08);
+}
+
+.topbar h1 {
+    margin:0;
+    font-size:1.15rem;
+    letter-spacing:0.6px;
+    color: #06306b;
+}
+
+.actions {
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+/* button-like anchors */
+.btn {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 16px;
+    background:var(--accent);
+    color:#fff;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow: 0 4px 10px rgba(2,6,23,0.08);
+}
+
+.btn-logout {
+    background: var(--danger);
+}
+
+/* table card */
+.table-wrap {
+    background: var(--card);
+    padding:14px;
+    border-radius:10px;
+    box-shadow: 0 10px 30px rgba(20,30,60,0.06);
+    overflow:auto;
+}
+
+.styled-table {
+    width:100%;
+    border-collapse:collapse;
+    min-width:720px;
+}
+
+.styled-table thead th {
+    background: linear-gradient(90deg,#f0f6ff,#ffffff);
+    color:#06306b;
+    text-align:left;
+    padding:12px 14px;
+    font-size:0.95rem;
+    border-bottom: 2px solid rgba(3,60,120,0.06);
+}
+
+.styled-table tbody td {
+    padding:12px 14px;
+    vertical-align:middle;
+    border-bottom:1px solid #f0f3f7;
+}
+
+.styled-table tbody tr:hover {
+    background: linear-gradient(90deg, rgba(0,123,255,0.03), rgba(0,0,0,0));
+}
+
+.center { text-align:center; }
+
+/* option column sizing and layout */
+.styled-table th:last-child,
+.styled-table td:last-child {
+    width:140px;
+    max-width:140px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.option-cell {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    height:72px;
+    padding:4px 6px;
+}
+
+.option-cell hr {
+    width:70%;
+    border:none;
+    border-top:1px solid #eee;
+    margin:6px 0;
+}
+
+/* small buttons inside option */
+.small-btn {
+    display:inline-block;
+    padding:6px 10px;
+    border-radius:6px;
+    font-size:0.85rem;
+    text-decoration:none;
+    color:#064;
+    background: #f3fbff;
+    border:1px solid #d6ebff;
+}
+
+.small-btn.danger {
+    color:#7a0a0a;
+    background:#fff5f5;
+    border:1px solid #f2c6c6;
+}
+
+/* footer */
+.footer {
+    text-align:center;
+    color:var(--muted);
+    font-size:0.85rem;
+    padding:8px 0;
+}
